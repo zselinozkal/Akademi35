@@ -8,8 +8,8 @@ public class YumakTopla : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.Instance.collectedCount++;
-            UIManager.Instance.UpdateCountText();
+            CollectibleTracker.collectedCount++;
+            FindObjectOfType<YumakUI>()?.UpdateCountText();
             Destroy(gameObject);
         }
     }
