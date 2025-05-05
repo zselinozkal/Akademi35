@@ -18,12 +18,19 @@ public class PlayerMovement : MonoBehaviour
     // For future animation
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    [Header("Footstep Sound")]
+    public AudioSource footstepAudio;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (footstepAudio == null)
+            footstepAudio = GetComponent<AudioSource>();
+
+
     }
 
     void Update()
@@ -47,6 +54,17 @@ public class PlayerMovement : MonoBehaviour
         // Flip character based on direction
         if (moveInput != 0)
             spriteRenderer.flipX = moveInput < 0;
+        if (Mathf.Abs(moveInput) > 0.1f && isGrounded)
+        {
+            if (!footstepAudio.isPlaying)
+                footstepAudio.Play();
+        }
+        else
+        {
+            if (footstepAudio.isPlaying)
+                footstepAudio.Stop();
+        }
+
     }
 
     void FixedUpdate()
