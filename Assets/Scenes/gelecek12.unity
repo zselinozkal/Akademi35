@@ -5154,8 +5154,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetScene: FinishScreen
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!82 &969994323
 AudioSource:
+=======
+--- !u!114 &969994323
+MonoBehaviour:
+>>>>>>> Stashed changes
 =======
 --- !u!114 &969994323
 MonoBehaviour:
@@ -5166,6 +5171,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969994312}
   m_Enabled: 1
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -5257,10 +5263,15 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
 =======
+=======
+>>>>>>> Stashed changes
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 753bb4b9c6509f94db59ac109a743a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &990093225
 GameObject:
