@@ -8,9 +8,16 @@ public class HealthS : MonoBehaviour
     public List<Image> healthImage;
     private bool playerInCanavarRange = false;
     private bool isInTouch = false;
+    
 
     void Start()
     {
+        // Eðer can 0 ise, yeni sahnede sýfýrla
+        if (CollectibleTracker.healthCount <= 0)
+        {
+            CollectibleTracker.ResetHealth();
+        }
+
         UpdateUI();
     }
 
@@ -23,10 +30,12 @@ public class HealthS : MonoBehaviour
             {
                 CollectibleTracker.healthCount--;
                 UpdateUI();
-                if (CollectibleTracker.healthCount == 0){
+                Debug.Log("Can azaldý. Kalan can: " + CollectibleTracker.healthCount);
+
+                if (CollectibleTracker.healthCount == 0)
+                {
                     SceneManager.LoadScene("kaybetme");
                 }
-
             }
         }
     }
