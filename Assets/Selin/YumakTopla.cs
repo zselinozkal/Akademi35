@@ -16,7 +16,7 @@ public class YumakTopla : MonoBehaviour
             isCollected = true; // tekrar tetiklenmesini engelle
 
             CollectibleTracker.collectedCount++;
-            FindObjectOfType<HealthUI>()?.UpdateCountText();
+            FindObjectOfType<YumakUI>()?.UpdateCountText();
             GetComponent<SpriteRenderer>().enabled = false;
             _audio.Play();
             // Sesin s�resi kadar sonra nesneyi yok et

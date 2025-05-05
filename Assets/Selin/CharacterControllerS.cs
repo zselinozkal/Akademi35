@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Animation placeholders
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
-        animator.SetBool("IsGrounded", isGrounded);
+        
 
         // Flip character based on direction
         if (moveInput != 0)
