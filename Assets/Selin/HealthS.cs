@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class HealthS : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class HealthS : MonoBehaviour
             {
                 CollectibleTracker.healthCount--;
                 UpdateUI();
+                if (CollectibleTracker.healthCount == 0){
+                    SceneManager.LoadScene("kaybetme");
+                }
+
             }
         }
     }
