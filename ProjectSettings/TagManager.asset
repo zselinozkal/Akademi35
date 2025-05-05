@@ -9,6 +9,7 @@ TagManager:
   - ObjectA
   - Climbable
   - ObjectB
+  - Canavar1
   layers:
   - Default
   - TransparentFX

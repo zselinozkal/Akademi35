@@ -16,10 +16,10 @@ public class YumakTopla : MonoBehaviour
             isCollected = true; // tekrar tetiklenmesini engelle
 
             CollectibleTracker.collectedCount++;
-            FindObjectOfType<YumakUI>()?.UpdateCountText();
+            FindObjectOfType<HealthUI>()?.UpdateCountText();
             GetComponent<SpriteRenderer>().enabled = false;
             _audio.Play();
-            // Sesin süresi kadar sonra nesneyi yok et
+            // Sesin sï¿½resi kadar sonra nesneyi yok et
             Destroy(gameObject, _audio.clip.length);
         }
     }
