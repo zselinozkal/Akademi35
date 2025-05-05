@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gecmis.unity
     guid: 61d4727e475adbc4481833e9c724f479
   - enabled: 1
+    path: Assets/Scenes/kaybetme.unity
+    guid: 199cfe5a2e93ff34ca00a13b3f81965b
+  - enabled: 1
     path: Assets/Scenes/FinishScreen.unity
     guid: 2141dac57729ab747b71f6841dd901bf
   - enabled: 1
