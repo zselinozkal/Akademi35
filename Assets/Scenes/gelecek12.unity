@@ -4887,6 +4887,10 @@ PrefabInstance:
       value: gecmis12
       objectReference: {fileID: 0}
     - target: {fileID: 382683932857463476, guid: 2cc7701a49dd7d947b9cd06817011078, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382683932857463476, guid: 2cc7701a49dd7d947b9cd06817011078, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.39
       objectReference: {fileID: 0}
@@ -12403,9 +12407,11 @@ GameObject:
   - component: {fileID: 1313561931}
   - component: {fileID: 1313561933}
   - component: {fileID: 1313561932}
+  - component: {fileID: 1313561935}
+  - component: {fileID: 1313561934}
   m_Layer: 0
   m_Name: tuzak
-  m_TagString: Untagged
+  m_TagString: Canavar1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12502,6 +12508,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1313561934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313561930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.16, y: 0.1, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1313561935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313561930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753bb4b9c6509f94db59ac109a743a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImage:
+  - {fileID: 1892157214}
+  - {fileID: 1176282599}
+  - {fileID: 1377906282}
 --- !u!1 &1341569746
 GameObject:
   m_ObjectHideFlags: 0
