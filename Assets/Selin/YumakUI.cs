@@ -12,6 +12,6 @@ public class YumakUI : MonoBehaviour
 
     public void UpdateCountText()
     {
-        countText.text = "Collected: " + CollectibleTracker.collectedCount;
+        countText.text = " " + CollectibleTracker.collectedCount;
     }
 }
