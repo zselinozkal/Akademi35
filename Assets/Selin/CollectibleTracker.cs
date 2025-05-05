@@ -5,7 +5,7 @@ public static class CollectibleTracker
 {
     public static int collectedCount = 0;
     public static int healthCount = 3; // 3 kalp varsayılan
-    public static int maxHealth = 3;   // Maksimum can sayısı
+    public static int maxHealth = 3;   // Maksimum can sayısı3
 
     public static void ResetHealth()
     {
