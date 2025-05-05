@@ -18,11 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/giris.unity
     guid: 636badc63ccf88c4aaf201912c77c863
   - enabled: 1
-    path: Assets/Scenes/gecmis12.unity
-    guid: 2683ecefd6d86944fb007cd76a3595a9
-  - enabled: 1
     path: Assets/Scenes/gelecek12.unity
     guid: 86d66ccbac21c6444b034c7531f4433b
+  - enabled: 1
+    path: Assets/Scenes/gecmis12.unity
+    guid: 2683ecefd6d86944fb007cd76a3595a9
   - enabled: 1
     path: Assets/Scenes/FinishScreen.unity
     guid: 2141dac57729ab747b71f6841dd901bf
