@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - ObjectA
   - Climbable
+  - ObjectB
   layers:
   - Default
   - TransparentFX
