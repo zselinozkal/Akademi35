@@ -17,24 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/giris.unity
     guid: 636badc63ccf88c4aaf201912c77c863
-  - enabled: 0
-    path: Assets/Scenes/Gelecek.unity
-    guid: 31f6891a09343d044bec89217a05f32c
-  - enabled: 0
-    path: Assets/Scenes/Gecmis.unity
-    guid: 61d4727e475adbc4481833e9c724f479
-  - enabled: 1
-    path: Assets/Scenes/kaybetme.unity
-    guid: 199cfe5a2e93ff34ca00a13b3f81965b
-  - enabled: 1
-    path: Assets/Scenes/FinishScreen.unity
-    guid: 2141dac57729ab747b71f6841dd901bf
   - enabled: 1
     path: Assets/Scenes/gecmis12.unity
     guid: 2683ecefd6d86944fb007cd76a3595a9
   - enabled: 1
     path: Assets/Scenes/gelecek12.unity
     guid: 86d66ccbac21c6444b034c7531f4433b
+  - enabled: 1
+    path: Assets/Scenes/FinishScreen.unity
+    guid: 2141dac57729ab747b71f6841dd901bf
+  - enabled: 1
+    path: Assets/Scenes/kaybetme.unity
+    guid: 199cfe5a2e93ff34ca00a13b3f81965b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
