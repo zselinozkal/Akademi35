@@ -3,14 +3,24 @@ using UnityEngine;
 public class YumakTopla : MonoBehaviour
 {
     private bool playerInRange = false;
-
+    AudioSource _audio;
+    private bool isCollected = false;
+    private void Awake()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            isCollected = true; // tekrar tetiklenmesini engelle
+
             CollectibleTracker.collectedCount++;
             FindObjectOfType<YumakUI>()?.UpdateCountText();
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            _audio.Play();
+            // Sesin süresi kadar sonra nesneyi yok et
+            Destroy(gameObject, _audio.clip.length);
         }
     }
 
